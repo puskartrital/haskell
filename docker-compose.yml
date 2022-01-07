@@ -1,0 +1,8 @@
+version: '3.3'
+services:
+  haskell:
+    build: .
+    container_name: 'hello-world'
+    command: stack exec hello-world-exe
+    volumes:
+      - ./hello-world/src:/app/src
